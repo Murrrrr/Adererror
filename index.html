@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Page-Enter" content='blendTrans(Duration='0.3')' />
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/jquery.pagepiling.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <canvas id="canvas"></canvas>
+
+    <section class="intro-section">
+        <div class="contents-container">
+            <img src="image/ufo.gif" alt="ufo" id="ufo">
+            <img src="image/tv.png" alt="tv" id="tv">
+            <video src="image/[SHANA]1674364658.mp4" autoplay muted loop></video>
+        </div>
+        <div class="subject">
+            <h1>ADER ERROR 3.0</h1>
+            <h2>VADER</h2>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <img src="image/adererror_vader.png" alt="vader" id="vader">
+        <div class="container">
+            <h1>ADER ERROR 3.0</h1>
+            <h2>VADER</h2>
+        </div>
+        <div class="cursor"></div>
+        <span id="brand_id">MAINFESTO</span>
+        <span id="collection">NEW COLLECTION</span>
+        <span id="site"><a href="http://en.adererror.com/">OFFICIAL SHOP</a></span>
+        <span id="edit">EDITORIAL</span>
+
+    </section>
+
+    
+
+
+<section class="brandId-section">
+
+    <div class="contents-container" id="pagepiling">
+        <div class="section" id="section1">
+            <img src="image/brandid1.jpg" alt="brand1">
+            <h1>NEW MINIMALISM</h1>
+        </div>
+
+        <div class="section" id="section2">
+            <img src="image/brandid2.jpg" alt="brand2">
+            <p>ADER ERROR is a unisex brand that reinterprets everything around it that can be easily forgotten based on a simple expression of modern mood and proposes a new minimalism that is different from the existing one. </p>
+        </div>
+
+<!-- 
+        <div class="section" id="section3">
+            <img src="image/brandid3.jpg"alt="brand3">
+            <p>We are trying to show the brand's identity sensitively through various colors.</p>
+        </div>
+
+        <div class="section" id="section4">
+            <img src="image/brandid4.jpg"alt="brand4">
+            <p> ADER is focusing on activities that people can easily miss in everday life, and presenting those things as familiar, and unfamiliar and new. </p>
+        </div> -->
+    </div>
+</section>
+
+<section class="collection-section">
+    <div class="subject">
+        <p class="glitch">
+            <span>VADER</span>
+            <span aria-hidden="true">VADER</span>
+            <span aria-hidden="true">VADER</span>
+        </p>
+
+        <span class="sub">2020 SS COLLECTION</span>
+    </div>
+
+    <div class="item-slider">
+        <div class="button left_button">
+            <svg width="39" height="74" viewBox="0 0 39 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="37.5924" y1="1.06066" x2="1.06076" y2="37.5923" stroke="white" stroke-width="3" />
+                <line x1="1.06066" y1="36.4077" x2="37.5923" y2="72.9394" stroke="white" stroke-width="3" />
+            </svg>
+
+        </div>
+
+        <div class="slider-wrapper">
+            <ul>
+                <li class="active"><img src="image/adererror_vader1.jpg"></li>
+                <li><img src="image/adererror_vader2.jpg"></li>
+                <li><img src="image/adererror_vader3.jpg"></li>
+                <li><img src="image/adererror_vader4.jpg"></li>
+                <li><img src="image/adererror_vader5.jpg"></li>
+                <li><img src="image/adererror_vader6.jpg"></li>
+                <li><img src="image/adererror_vader7.jpg"></li>
+                <li><img src="image/adererror_vader8.jpg"></li>
+            </ul>
+        </div>
+
+        <div class="button right_button">
+            <svg width="40" height="74" viewBox="0 0 40 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.93934" y1="72.9393" x2="38.471" y2="36.4077" stroke="white" stroke-width="3" />
+                <line x1="38.4711" y1="37.5923" x2="1.93944" y2="1.06063" stroke="white" stroke-width="3" />
+            </svg>
+
+        </div>
+    </div>
+
+    <p>Inspired by the "alien" world, the collection expresses the property of "mystery" in a world where it is
+        difficult to define itself under the theme of "alien." In particular, this season, it directly conveys
+        the story of an alien species "Vader" and a human race that reached Earth for survival.</p>
+</section>
+
+
+
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/jquery.pagepiling.js"></script>
+    <script src="script/canvas.js"></script>
+    <script src="script/index.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('#pagepiling').pagepiling({
+                menu: false,
+                direction: 'vertical',
+                verticalCentered: true,
+                scrollingSpeed: 700,
+                easing: 'swing',
+                loopBottom: false,
+                loopTop: false,
+                css3: true,
+                navigation: false,
+                normalScrollElements:null,
+            })
+        })
+    </script>
+    
+</body>
+
+</html>
