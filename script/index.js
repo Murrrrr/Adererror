@@ -41,7 +41,7 @@ $(document).ready(() => {
         $(e.target).css({"top":"50%"});
         $(e.target).css({"left":"50%"});
         $(e.target).css({"transform":"translate(-50%, -50%)"});
-        $(e.target).css({"font-size":"3rem"});
+        $(e.target).css({"font-size":"2.5rem"});
 
         $('.main-section > .container').css({'opacity':'0'});
         $('#vader').css({'opacity':'0'});
@@ -67,12 +67,56 @@ $(document).ready(() => {
         }
 
         else if(e.target.id == "collection"){
-            setTimeout(()=>{$('.collection-section').css({"display":"block"});},3000)
+            $('.brandId-section').css({"display":"none"});
+            setTimeout(()=>{
+                $('.collection-section').css({"display":"block"});
+                $('.collection-section .glitch').css({"opacity":"1"});
+            },3500);
+            setTimeout(()=>{
+                $('.collection-section .sub').css({"opacity":"1"});
+            },4000);
+            setTimeout(()=>{
+                $('.collection-section .item-slider').css({"opacity":"1"});
+            },5000);
         }
 
+    })
 
+    $('#back_button').click(()=>{
         
+        setTimeout(()=>{
+            $('.main-section').css({"display":"block"});
+            $('.main-section > .container').css({'opacity':'1'});
+        },2000)
+        
+        $('#vader').css({'opacity':'1'});
+        $('.main-section span').css({'opacity':"1"});
+        $("#brand_id").css({"top":"10%"});
+        $("#brand_id").css({"left":"10%"});
+        $("#brand_id").css({"transform":"translate(0%, 0%)"});
+        $("#brand_id").css({"font-size":"1.3rem"});
+        $('.brandId-section').css({'margin-right':'100%'});
+        $('.contents-container').css({"opacity":"0"});
+    })
 
+    $('#collection_button').click(()=>{
+        $('.collection-section').css({"opacity" : 0});
+        setTimeout(()=>{
+            $('.collection-section').css({"display":"none"});
+        },1000)
+
+        setTimeout(()=>{
+            $('.main-section').css({"display":"block"});
+            $('#vader').css({'opacity':'1'});
+            $('.main-section span').css({'opacity':"1"});
+            $("#collection").css({"top":"20%"});
+            $("#collection").css({"right":"10%"});
+            $("#collection").css({"left":"auto"});
+            $("#collection").css({"transform":"translate(0%, 0%)"});
+            $("#collection").css({"font-size":"1.5rem"});
+            $('.container').css({"opacity":1});
+            $('.brandId-section').css({"display":"block"});
+        },1500)
     })
 
     let index = 0;

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Page-Enter" content='blendTrans(Duration='0.3')' />
     <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/jquery.pagepiling.css">
+    <link rel="stylesheet" href="style/jquery.fullPage.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Adererror 3.0</title>
 </head>
 
 <body>
@@ -52,8 +52,9 @@
 
 
 <section class="brandId-section">
+    <i class="fas fa-arrow-left" id="back_button"></i>
 
-    <div class="contents-container" id="pagepiling">
+    <div class="contents-container" id="fullpage">
         <div class="section" id="section1">
             <img src="image/brandid1.jpg" alt="brand1">
             <h1>NEW MINIMALISM</h1>
@@ -64,20 +65,21 @@
             <p>ADER ERROR is a unisex brand that reinterprets everything around it that can be easily forgotten based on a simple expression of modern mood and proposes a new minimalism that is different from the existing one. </p>
         </div>
 
-<!-- 
         <div class="section" id="section3">
-            <img src="image/brandid3.jpg"alt="brand3">
+            <img src="image/brandid3.jpg" alt="brand3">
             <p>We are trying to show the brand's identity sensitively through various colors.</p>
         </div>
 
         <div class="section" id="section4">
             <img src="image/brandid4.jpg"alt="brand4">
             <p> ADER is focusing on activities that people can easily miss in everday life, and presenting those things as familiar, and unfamiliar and new. </p>
-        </div> -->
+
     </div>
 </section>
 
 <section class="collection-section">
+
+    <i class="fas fa-arrow-left" id="collection_button"></i>
     <div class="subject">
         <p class="glitch">
             <span>VADER</span>
@@ -119,31 +121,19 @@
         </div>
     </div>
 
-    <p>Inspired by the "alien" world, the collection expresses the property of "mystery" in a world where it is
-        difficult to define itself under the theme of "alien." In particular, this season, it directly conveys
-        the story of an alien species "Vader" and a human race that reached Earth for survival.</p>
 </section>
 
 
 
     <script src="script/jquery-3.5.1.min.js"></script>
-    <script src="script/jquery.pagepiling.js"></script>
+    <script src="script/jquery.fullPage.js"></script>
     <script src="script/canvas.js"></script>
     <script src="script/index.js"></script>
     <script>
         $(document).ready(()=>{
-            $('#pagepiling').pagepiling({
-                menu: false,
-                direction: 'vertical',
-                verticalCentered: true,
-                scrollingSpeed: 700,
-                easing: 'swing',
-                loopBottom: false,
-                loopTop: false,
-                css3: true,
-                navigation: false,
-                normalScrollElements:null,
-            })
+            $('#fullpage').fullpage({
+
+            });
         })
     </script>
     
